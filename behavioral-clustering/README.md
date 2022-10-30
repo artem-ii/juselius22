@@ -6,8 +6,13 @@
 
 *Sat-Sun 29-30 Oct 2022*
 
-What was done:
+#### What was done:
 
 * Dataset clustered using scikit-learn BayesianGaussianMixture
 * Dataset with bgm_clusters column saved to processed_data/clustered_behavioral_LEMON.csv
-* Feature importance tested using LogisticRegression processed_data/feature_importance_max()_logreg.csv
+* Feature importance tested using LogisticRegression processed_data/feature_importance_max(min)_logreg.csv
+
+
+#### Comments:
+
+##### BGM clustering step
