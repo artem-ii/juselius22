@@ -1,9 +1,14 @@
 # LEMON Dataset Analysis for Sigrid Juselius 2022 Grant Application
-## General README
+## General Project notebook
+For details refer to READMEs in corresponding folders
 
 ---
-### Behavioral clustering
 
-*Sat-Sun 29-30 Oct 2022*
+* Sat-Sun 29-30 Oct 2022 Behavioral clustering
 
-For details refer to READMEs in corresponding folders
+#### General To-do:
+- Look carefully into behavioral measures used and clean them up if needed 
+
+---
+
+* Mon 31 Oct 2022 Neuroimaging analysis between clusters

@@ -44,7 +44,7 @@ To me that gives ambiguity as there are no zero-weight clusters (even when I add
 In the proposal that's a good idea to emphasize the need for BIOBANK acsess as it has behavioral data as well together with wider BMI range.
 
 ###### To-do:
-1. Try a simpler clustering
+1. Try simpler clustering (e.g. simple Gaussian Mixture)
 2. Split data and cluster only overweight (quite few for clustering?)
 
 ##### Cluster description/feature importance step (Logistic Regression)
