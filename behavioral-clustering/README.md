@@ -17,7 +17,7 @@
 
 ##### BGM clustering step
 
-Clustering seems to have found a pattern different from PCA, which is kind of expected and normal to me.
+Clustering seems to have found a pattern different from PCA, which is kind of expected and normal to me.  
 Clusters differ by BMI, and are promising on that account from a first glance:
 
 
@@ -35,4 +35,6 @@ Clusters differ by BMI, and are promising on that account from a first glance:
 | 9 | 23.312965 | 78.80 |
 
 However, the BGM algorithm is a variational inference algorithm. I provided 10 clusters and expected that it would only use a few. It would be seen as zero weights assigned to clusters. But I got the following result:
+```python
     array([0.07, 0.11, 0.09, 0.15, 0.08, 0.08, 0.13, 0.07, 0.11, 0.11])
+``
