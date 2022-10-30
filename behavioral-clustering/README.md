@@ -3,6 +3,7 @@
 
 ---
 ### Clustering using Bayesian Gaussian Mixture model
+file: LEMON-behavioral-clustering.ipynb
 
 *Sat-Sun 29-30 Oct 2022*
 
@@ -40,11 +41,11 @@ However, the BGM algorithm is a variational inference algorithm. I provided 10 c
 array([0.07, 0.11, 0.09, 0.15, 0.08, 0.08, 0.13, 0.07, 0.11, 0.11])
 ```
 
-To me that gives ambiguity as there are no zero-weight clusters (even when I added 20 instead of 10). Because of that I am thinking to try another algorithm like Gaussian Mixture or something simpler. Also introducing a BMI threshold and clustering only overweight subjects might be a good idea. PCA already shows behavioral differences between normal weight and overweight subjects. So with clustering I could focus only on overweight at this stage.  
+To me that gives ambiguity as there are no zero-weight clusters (even when I added 20 instead of 10). Because of that I am thinking to try another algorithm like Gaussian Mixture or something simpler. The important step would also be to find optimal number of clusters, e.g. using an information criteria for Gaussian Mixture. Also introducing a BMI threshold and clustering only overweight subjects might be a good idea. PCA already shows behavioral differences between normal weight and overweight subjects. So with clustering I could focus only on overweight at this stage.  
 In the proposal that's a good idea to emphasize the need for BIOBANK acsess as it has behavioral data as well together with wider BMI range.
 
 ###### To-do:
-1. Try simpler clustering (e.g. simple Gaussian Mixture)
+1. Try simpler clustering (e.g. simple Gaussian Mixture), explain cluster number mathematically
 2. Split data and cluster only overweight (quite few for clustering?)
 
 ##### Cluster description/feature importance step (Logistic Regression)
@@ -84,5 +85,5 @@ Features of minimal coefficients for each cluster:
 ###### To-do:
 1. Read more on interpretation of clusters in multidimensional data
 2. Read on logistic regression and maybe there are better algorithms for my aim?
-3. What would be the best visualization for cluster description?
+3. What would be the best visualization for cluster description? Maybe, plot simple 2D plots for parameters of interest and color with clusters?
 4. Read about all the tests/tasks which have high/low coefficients
