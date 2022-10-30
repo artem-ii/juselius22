@@ -8,9 +8,9 @@
 
 #### What was done:
 
-[x] Dataset clustered using scikit-learn BayesianGaussianMixture
-[x] Dataset with bgm_clusters column saved to processed_data/clustered_behavioral_LEMON.csv
-[x] Feature importance tested using LogisticRegression processed_data/feature_importance_max(min)_logreg.csv
+1. Dataset clustered using scikit-learn BayesianGaussianMixture
+2. Dataset with bgm_clusters column saved to processed_data/clustered_behavioral_LEMON.csv
+3. Feature importance tested using LogisticRegression processed_data/feature_importance_max(min)_logreg.csv
 
 
 #### Comments:
@@ -44,14 +44,16 @@ To me that gives ambiguity as there are no zero-weight clusters (even when I add
 In the proposal that's a good idea to emphasize the need for BIOBANK acsess as it has behavioral data as well together with wider BMI range.
 
 ###### To-do:
-[] Try a simpler clustering
-[] Split data and cluster only overweight (quite few for clustering?)
+1. Try a simpler clustering
+2. Split data and cluster only overweight (quite few for clustering?)
 
 ##### Cluster description/feature importance step (Logistic Regression)
 
 I used multimodal logistic regression to assess which features drive which clusters. BMI or other anthropometric features were not among the top-1 ones. I constructed tables of features with maximal and minimal coefficients.  
 
 Features of maximal coefficients for each cluster:
+| Cluster | Feature with max coefficient |
+|---|---|
 | 0 | COPE_Acceptance |
 | 1 | CVLT_1 |
 | 2 | NEOFFI_Extraversion |
@@ -65,6 +67,8 @@ Features of maximal coefficients for each cluster:
 
 Features of minimal coefficients for each cluster:
 
+| Cluster | Feature with min coefficient |
+|---|---|
 | 0 | MDBF_Day2_WM_Scale |
 | 1 | MARS_Cognitive_Distraction |
 | 2 | TICS_PressuereToPerform |
@@ -78,7 +82,7 @@ Features of minimal coefficients for each cluster:
 
 
 ###### To-do:
-[] Read more on interpretation of clusters in multidimensional data
-[] Read on logistic regression and maybe there are better algorithms for my aim?
-[] What would be the best visualization for cluster description?
-[] Read about all the tests/tasks which have high/low coefficients
+1. Read more on interpretation of clusters in multidimensional data
+2. Read on logistic regression and maybe there are better algorithms for my aim?
+3. What would be the best visualization for cluster description?
+4. Read about all the tests/tasks which have high/low coefficients
