@@ -5,6 +5,7 @@ For details refer to READMEs in corresponding folders
 ---
 
 ### Sat-Sun 29-30 Oct 2022 Behavioral clustering
+folder: behavioral-clustering
 
 #### General To-do:
 - Look carefully into behavioral measures used and clean them up if needed 
