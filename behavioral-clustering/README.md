@@ -85,6 +85,6 @@ Features of minimal coefficients for each cluster:
 ###### To-do:
 1. Read more on interpretation of clusters in multidimensional data
 2. Read on logistic regression and maybe there are better algorithms for my aim?
-3. What would be the best visualization for cluster description? Maybe, plot simple 2D plots for parameters of interest and color with clusters?
+3. What would be the best visualization for cluster description? Maybe, plot simple 2D plots for parameters of interest and color with clusters? For example, plot BMI vs COPE_Acceptance
 4. Read about all the tests/tasks which have high/low coefficients
 5. Decide which clusters differ the most to compare neuroimaging. Representative instances? How to find them in Gaussian Mixture?
