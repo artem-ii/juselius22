@@ -85,6 +85,63 @@ Features of minimal coefficients for each cluster:
 ###### To-do:
 1. Read more on interpretation of clusters in multidimensional data
 2. Read on logistic regression and maybe there are better algorithms for my aim?
-3. What would be the best visualization for cluster description? Maybe, plot simple 2D plots for parameters of interest and color with clusters? For example, plot BMI vs COPE_Acceptance
+3. What would be the best visualisation for cluster description? Maybe, plot simple 2D plots for parameters of interest and color with clusters? For example, plot BMI vs COPE_Acceptance
 4. Read about all the tests/tasks which have high/low coefficients
 5. Decide which clusters differ the most to compare neuroimaging. Representative instances? How to find them in Gaussian Mixture?
+
+---
+### Clustering on PCA-transformed data and cluster characterisation 
+file: LEMON-behavioral-clustering.ipynb
+
+*Mon-Thu 31-03 Nov 2022*
+
+#### What was done:
+1. PCA-transformed data clustered using Bayesian Gaussian Mixture model
+2. Visualised scatters for several features that contribute to PCA
+3. Identified features important for the clusters using logistic regression
+4. Performed ANOVA Tukey HSD on BMI from 4 clusters
+5. Visualised distributions of Age, Sex and Handedness across clusters  
+
+#### Comments:
+
+##### PCA based BGM clustering
+
+Clustering looks good. The only weird thing was that it finds 5 clusters with every random seed tested except 42 and 43 (there it's 4 clusters).  
+
+It is important to note that PCA with 2 components preserves only about 18% of variance. Performing PCA with 95% variance preservation threshold gives the need for 98 dimensions. Although this 2D PCA is probably still fine for visualisation, we may want to try different clustering, like BGM on full data performed above.  
+
+```python
+# In
+pca.explained_variance_ratio_
+
+# Out
+array([0.10391384, 0.07820958])
+```
+
+Also, I have thought and read on the need of removing multicollinear variables for PCA analysis and concluded that it is probably not useful. Keeping everything as it is gives a more non-biased flavour. However, I should remove multicollinear variables in order to perform regression.  
+
+Importantly, I have corrected the contributions of features by taking their absolute value into the account. Otherwise negative values are at the bottom which is not correct.  
+
+###### To-do:
+1. Create a consistent formatting theme for all the plots - read on matplotlib for that
+2. Think more on multicollinearity - some features 
+
+##### Important features for each cluster
+
+Here I used logistic regression which I suppose is not appropriate. I believe linear model is needed here.  
+
+And here the multicollinearity becomes important.
+
+###### To-do:
+1. Read on glm in statsmodels
+2. Read on how to remove multicollinearity without using PCA (Or maybe just use PCA?)
+
+##### ANOVA on BMI
+
+That is clearly not optimal. I will need to infer this using a glm with proper modeling and corrections for multiple comparisons.
+
+Also I think it's a good idea to include regressors of no interest (Age group, sex, handedness etc)
+
+###### To-do:
+1. Include regressors of no interest in the glm and test everything like that
+
