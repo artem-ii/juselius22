@@ -12,4 +12,8 @@ folder: behavioral-clustering
 
 ---
 
-### Mon 31 Oct 2022 Neuroimaging analysis between clusters
+### Mon 31 Oct - 03 Nov 2022 Clustering on PCA, characterisation of clusters
+folder: behavioral-clustering
+
+#### General To-do:
+- Make standardised plot theme and read on matplotlib
