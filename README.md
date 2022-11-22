@@ -17,3 +17,5 @@ folder: behavioral-clustering
 
 #### General To-do:
 - Make standardised plot theme and read on matplotlib
+
+### Sat-Sun 12-13 Nov 2022 Behavioral Clustering and Plotting Styla

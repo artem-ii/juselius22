@@ -145,3 +145,11 @@ Also I think it's a good idea to include regressors of no interest (Age group, s
 ###### To-do:
 1. Include regressors of no interest in the glm and test everything like that
 
+---
+### Remove all anthropometric values from PCA and define plotting style
+files: LEMON-behavioral-clustering.ipynb	plotting_style.ipynb
+
+*Sat-Sun 12-13 Nov 2022*
+#### What was done:
+1. Removed anthropometric variables from PCA data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+2. Created plotting_style.ipnb and plotted data
