@@ -167,4 +167,4 @@ files: LEMON-behavioral-clustering.ipynb	processed_data/bgm_on_pca_nobmi.mdl	pro
 3. Dumped BGM model and nobmi components array binary objects added
 
 #### Comments:
-Now repo should be suitable for clonning. To get a visualization of clusters from the proposal, use `LEMON-behavioral-clustering.ipynb`. Set `SCRIPTS_PATH` to your local directory where the repo was cloned. Don't execute all the code, but just starting from **Plotting functions for behavioural clustering**. This should copy all needed files from `processed_data` subdirectory and reproduce the plot.
+Now repo should be suitable for clonning. To get a visualization of clusters from the proposal, use `LEMON-behavioral-clustering.ipynb` Jupyter Notebook. Use [Jupyter Lab](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906) for better navigation with available outline. Set `SCRIPTS_PATH` to your local directory where the repo was cloned. Don't execute all the code, but just starting from **Plotting functions for behavioural clustering** section of the notebook. This should access all needed files from `processed_data` subdirectory and reproduce the plot.
