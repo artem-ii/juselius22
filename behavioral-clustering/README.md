@@ -1,6 +1,8 @@
 # LEMON Dataset Analysis for Sigrid Juselius 2022 Grant Application
 ## Data Cleaning and Behavioral clustering
 
+*This README is an analysis log. Look to the bottom (30 Nov 2022) for reproducing the clustering plot from the proposal*
+
 ---
 ### Clustering using Bayesian Gaussian Mixture model
 file: LEMON-behavioral-clustering.ipynb
@@ -152,4 +154,17 @@ files: LEMON-behavioral-clustering.ipynb	plotting_style.ipynb
 *Sat-Sun 12-13 Nov 2022*
 #### What was done:
 1. Removed anthropometric variables from PCA data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-2. Created plotting_style.ipnb and plotted data
+2. Created plotting_style.ipnb and plotted data 
+
+---
+### Clean up the notebook for the submission of the proposal
+files: LEMON-behavioral-clustering.ipynb	processed_data/bgm_on_pca_nobmi.mdl	processed_data/components_nobmi.npy 
+
+*Wed 30 Nov 2022*
+#### What was done:
+1. Legend with cluster sizes added to clustering plot
+2. All analyses except PCA with no anthropometry and BGM clustering on it removed
+3. Dumped BGM model and nobmi components array binary objects added
+
+#### Comments:
+Now repo should be suitable for clonning. To get a visualization of clusters from the proposal, set `SCRIPTS_PATH` to your local directory where the repo was cloned. Don't execute all the code, but just starting from **Plotting functions for behavioural clustering**. This should copy all needed files from `processed_data` subdirectory and reproduce the plot.
