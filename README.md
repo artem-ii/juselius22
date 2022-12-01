@@ -26,4 +26,4 @@ folder: behavioral-clustering
 
 ### Wed 30 Nov 2022 Prepared scripts for proposal submission
 
-See instructions for reproducing a plot from proposal in [`behavioral-clustering`](https://github.com/artem-ii/juselius22/tree/main/behavioral-clustering) subdirectory's `README.md`
+See instructions for reproducing a plot from proposal in [`behavioral-clustering/README.md`](https://github.com/artem-ii/juselius22/tree/main/behavioral-clustering#clean-up-the-notebook-for-the-submission-of-the-proposal) 

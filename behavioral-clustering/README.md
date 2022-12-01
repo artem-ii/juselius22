@@ -1,7 +1,7 @@
 # LEMON Dataset Analysis for Sigrid Juselius 2022 Grant Application
 ## Data Cleaning and Behavioral clustering
 
-*This README is an analysis log. Look to the bottom (30 Nov 2022) for reproducing the clustering plot from the proposal*
+*This README is an analysis log. Look to the bottom [**30 Nov 2022**](https://github.com/artem-ii/juselius22/tree/main/behavioral-clustering#clean-up-the-notebook-for-the-submission-of-the-proposal) for reproducing the clustering plot from the proposal*
 
 ---
 ### Clustering using Bayesian Gaussian Mixture model
